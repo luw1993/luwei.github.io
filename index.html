@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>路伟-个人简历</title>
+<meta name="keywords" content="个人简历" />
+<meta name="description" content="个人简历"/>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+
+</head>
+<body>
+<!-- banner -->
+<div class="header-top" style="position: fixed; top: 0px; width: 100%;">
+	<div class="container">
+		<ul>
+			<li><a class="scroll" href="#about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>个人简介</a></li>
+			<li><a class="scroll" href="#experience"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>工作经历</a></li>
+			<li><a class="scroll" href="#project"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>项目经验</a></li>
+			<li><a class="scroll" href="#skills"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>个人技能</a></li>
+			<li><a class="scroll" href="#contactme"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>联系方式</a></li>
+		</ul>
+	</div>
+</div>	
+<div class="header">
+	<div class="container">
+		<div class="col-md-8 header-left">
+			<div class="col-sm-5 pro-pic">
+				<img class="img-responsive" src="images/pic.jpg" alt=" "/>
+			</div>
+			<div class="col-sm-5 pro-text">
+				<h1>路伟</h1>
+				<p>PHP程序员</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 header-right ">
+			<ul class="list-left">
+				<li>年龄:</li>
+				<li>性别:</li>
+				<li>学历:</li>
+				<li>学校:</li>
+				<li>电话:</li>
+				<li>邮箱:</li>
+				<li>住址: </li>
+			</ul>
+			<ul class="list-right">
+				<li>25</li>
+				<li>女</li>
+				<li>本科</li>
+				<li>山东中医药大学</li>
+				<li>185-9630-3675</li>
+				<li>1147327393@qq.com</li>
+				<li>烟台市芝罘区</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div id="about" class="about">
+	<div class="container">
+		<h3 class="tittle">个人简介</h3>
+		<p class="abt-para">
+		具有多年的PHP网站开发经验，曾经为多个企业网站进行开发，熟悉PHP编程，
+		熟悉thinkPHP底层框架，熟练运用phpstorm工具以及mysql数据库，对PHP开发
+		具有浓厚的兴趣。喜欢主动了解和学习新技术，喜欢分享经验，拥有良好的
+		敬业精神和团队精神，抗压能力强，愿意接受具有挑战性的工作。
+		</p>
+	</div>
+	<div class="abt-left ">
+		<div class="text-center">
+				<h2>教育经历</h2>
+				<div class="accordion">
+							<div class="accordion-section">
+								<h5><a class="accordion-section-title" href="#accordion-1">
+									<span>2011.10 - 2015.6</span> 山东中医药大学
+								<i class="glyphicon glyphicon-chevron-down"></i><div class="clearfix"></div>
+								</a></h5>
+								<div id="accordion-1" class="accordion-section-content">
+									<h6>主修课程</h6>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>C++/C#</li>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>sqlserver</li>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>java</li>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>软件工程</li>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>计算机网络</li>
+										<li><span aria-hidden="true">&nbsp;&nbsp;&nbsp;</span>……</li>
+									</ul>
+								</div>
+							</div>
+				</div>
+				<script>
+							jQuery(document).ready(function() {
+								function close_accordion_section() {
+									jQuery('.accordion .accordion-section-title').removeClass('active');
+									jQuery('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+								}
+
+								jQuery('.accordion-section-title').click(function(e) {
+									// Grab current anchor value
+									var currentAttrValue = jQuery(this).attr('href');
+
+									if(jQuery(e.target).is('.active')) {
+										close_accordion_section();
+									}else {
+										close_accordion_section();
+
+										// Add active class to section title
+										jQuery(this).addClass('active');
+										// Open up the hidden content panel
+										jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open'); 
+									}
+
+									e.preventDefault();
+								});
+							});
+				</script>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!-- about -->
+<!-- education -->
+<div class="employment" id="experience">
+	<div class="container">
+		<h3 class="tittle ">工作经历</h3>
+		<p class="abt-para ">2015.7-至今就职于商机互联，先后就职于项目部和研发部，进行php和asp网站的修改和开发。</p>
+		<div class="col-md-6 employ-left">
+			<h4>01</h4>
+		</div>
+		<div class="col-md-6 employ-right">
+			<h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>项目部</h5>
+			<p>2015.7-2017.3:项目部程序员，主要负责客户网站的修改维护，根据客户需求实现相关功能，
+			烟台交运保险票部分的功能实现，以ecshop为基础制作商城；搭建PHP和ASP网站运行的服务器环境，
+			负责服务器的维护
+			</p>
+		</div>
+		<div class="col-md-6 employ-left2">
+			<h5>研发部<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+			<p>2017.3-至今：研发部程序员，企业网站的开发，以TP5为底层框架进行二次开发。
+			参与公司平台的开发，主要负责前台页面的展示实现，后台微翼、点击推广、飞翼服务等功能的实现，以及后期整个平台的维护。
+			参与公司内部管理系统的开发，主要负责设计部部分功能的实现。数据接口的编写，实现网站之间的数据对接。
+			</p>
+		</div>
+		<div class="col-md-6 employ-right2">
+			<h4>02</h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="portfolio" id="project">
+	<div class="container">
+		<h3 class="tittle ">项目经验</h3>
+		<div class="text-center">空调集成网、奔牛网、烟台农业信息网、内部管理系统</div>		
+	</div>
+</div>
+<div class="more" id="skills">
+	<div class="container">
+		<h3 class="tittle">个人技能</h3>
+		<div class="text-center">
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success" style="width: 100%">PHP（ThinkPHP）
+				  </div>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success1" style="width: 100%">MYSQL
+				  </div>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success3" style="width: 100%">JavaScript
+				  </div>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success2" style="width: 100%">HTML
+				  </div>
+				  <div class="clearfix"></div>
+			</div>
+			
+			<div class="progress no-marg">
+				  <div class="progress-bar progress-bar-success4" style="width: 100%">服务器
+				  </div>
+				  <div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div id="contactme" class="contact">
+	<div class="container">
+		<h3 class="tittle">联系我</h3>
+		<div class="text-center">
+            <span>手机:18596303675&nbsp;&nbsp;</span>
+            <span>Email:1147327393@qq.com&nbsp;&nbsp;</span>
+            <span>QQ:1147327393</span>
+        </div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+	<!--scrolling js-->
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<!--//scrolling js-->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>
